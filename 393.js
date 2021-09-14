@@ -69,7 +69,7 @@ const change = function(num) {
   return count;
 }
 
-console.log(change(0)); // => 0
-console.log(change(12)); // => 3
-console.log(change(468)); // => 11
-console.log(change(123456)); // => 254)
+// console.log(change(0)); // => 0
+// console.log(change(12)); // => 3
+// console.log(change(468)); // => 11
+// console.log(change(123456)); // => 254)
