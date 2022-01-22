@@ -63,5 +63,14 @@
 */
 
 const rabbit = function (input) {
-  
+  let inputArr = input.split(" ");
+  let male_rabbits = inputArr[0];
+  let female_rabbits = inputArr[1];
+  let rabbits_needed_alive = inputArr[2];
+  let total_rabbits = male_rabbits + female_rabbits;
+  let months = 0;
+  let rabbits_age = 2;
+  while (total_rabbits < rabbits_needed_alive) {
+    
+  }
 }
