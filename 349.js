@@ -39,3 +39,7 @@ rl.question('Input: ', function (inputStr) {
   console.log(input);
   rl.close();
 });
+
+const output = function (inputArr) {
+  
+}
