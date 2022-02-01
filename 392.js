@@ -28,5 +28,17 @@
 */
 
 const flipfront = function (arr, num) {
-  
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(arr[i]);
+  }
+  for (let j = 0; j < num; j++) {
+    newArr[j] = arr[(num - 1) - j]
+  }
+  return newArr;
 }
+
+console.log(flipfront([0, 1, 2, 3, 4], 2)); // => [1, 0, 2, 3, 4]
+console.log(flipfront([0, 1, 2, 3, 4], 3)); // => [2, 1, 0, 3, 4]
+console.log(flipfront([0, 1, 2, 3, 4], 5)); // => [4, 3, 2, 1, 0]
+console.log(flipfront([1, 2, 2, 2], 3)); // => [2, 2, 1, 2]
