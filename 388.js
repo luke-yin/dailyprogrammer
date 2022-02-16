@@ -10,7 +10,26 @@
 */
 
 const pal = function (num) {
-  let 
+  let str = num.toString();
+  if (str.length % 2 === 0) {
+    let halfLength = str.length / 2;
+    for (let i = 0; i < halfLength; i++) {
+      for (let j = str.length - 1; j >= halfLength; j--) {
+        if (str[i] !== str[j]) {
+          return false;
+        }
+      }
+    }
+  } else if (str.length % 2 === 1) {
+    let halfLength = (str.length - 1) / 2;
+    for (let i = 0; i < halfLength; i++) {
+      for (let j = str.length - 1; j >= halfLength; j--) {
+        if (str[i] !== str[j]) {
+          return false;
+        }
+      }
+    }
+  }
 }
 
 const nextpal = function (num) {
